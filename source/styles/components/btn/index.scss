@@ -1,3 +1,5 @@
+@import 'size';
+
 .btn {
     padding: 11px 37px;
     background-color: $color-1;
@@ -13,19 +15,19 @@
     }
 
     &.medium {
-        padding: 13px 46px;
-        font-size: 18px;
+        @include size(18px, 13px, 46px, 13px, 46px);
+        // padding: 13px 46px;
+        // font-size: 18px;
     }
 
     &.large {
+        @include size(26px, 23.5px, 94px, 23.5px, 94px);
+
         margin-left: 1px;
-        padding: 23.5px 94px;
-        font-size: 26px;
     }
 
     &.x-large {
-        padding: 28px 102px;
-        font-size: 36px;
+        @include size(36px, 28px, 102px, 28px, 102px);
     }
 
     &.round {
